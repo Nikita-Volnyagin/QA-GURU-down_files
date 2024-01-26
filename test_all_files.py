@@ -7,13 +7,13 @@ from io import TextIOWrapper
 from openpyxl import load_workbook
 import os
 import csv
-import download_files
+import download
 
 
 def test_download_files_in_tmp():
-    download_files.test_download_pdf_file()
-    download_files.test_download_csv_file()
-    download_files.test_download_xlsx_file()
+    download.test_download_pdf_file()
+    download.test_download_csv_file()
+    download.test_download_xlsx_file()
 
 
 def test_create_archive(create_archive):
